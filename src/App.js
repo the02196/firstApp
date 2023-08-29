@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Nav from "./components/Nav";
+import Content from "./components/Content";
+import { useState } from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          파일 변경 됨 222222
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+       <Nav />
+        <div className="content">
+          <Content arrayNum = "0" />
+          <Content arrayNum = "1" />
+          <Content arrayNum = "2" />
+          <Content arrayNum = "3" />
+        </div>
+      </div>
+    </>
   );
 }
 
