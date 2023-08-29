@@ -1,0 +1,13 @@
+.nav {
+    background-color: orange;
+    ul {
+        li {
+            &:hover {
+                background-color: green;
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+}
